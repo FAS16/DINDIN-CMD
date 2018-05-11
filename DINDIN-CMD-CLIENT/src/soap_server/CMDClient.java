@@ -14,8 +14,8 @@ public class CMDClient {
 
 	public static void main(String[] args) throws MalformedURLException, JSONException {
 		final String URL = "http://130.225.170.248:9901/dindinadmin?wsdl";
-	URL url = new URL("http://localhost:9901/dindinadmin?wsdl");
-		//URL url = new URL(URL);
+//	URL url = new URL("http://localhost:9901/dindinadmin?wsdl");
+		URL url = new URL(URL);
 		QName qname = new QName("http://soap_server/", "LogicService");
 		Service service = Service.create(url, qname);
 		LogicI logic = service.getPort(LogicI.class);
