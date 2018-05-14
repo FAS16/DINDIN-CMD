@@ -1,6 +1,7 @@
 package soap_server;
 
 import java.net.MalformedURLException;
+
 import java.net.URL;
 import java.util.Scanner;
 import javax.xml.namespace.QName;
@@ -36,6 +37,7 @@ public class CMDClient {
 				if (token != null) {
 					userAuthenticated = true;
 					System.out.println("Logget ind");
+					System.out.println("Din token: " + token);
 				} else
 					System.out.println("Forkert brugernavn og/eller adgangskode, prøv igen!\n");
 
@@ -150,7 +152,7 @@ public class CMDClient {
 				String address = scan.nextLine();
 				System.out.println("Indtast køkken");
 				String cuisine = scan.nextLine();
-				System.out.println("Indtast prisklasse");
+				System.out.println("Indtast prisklasse (LOW, MEDIUM, HIGH)");
 				String budget = scan.nextLine();
 				System.out.println("Indtast tlf");
 				String phone = scan.nextLine();
