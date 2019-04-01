@@ -1,4 +1,4 @@
-# DINDIN KOMMANDOLINJE-PROGRAM (Currently not in operation)
+# DINDIN Console application (Currently not in operation)
 
 This SOAP Client is developed for the DINDIN Angular Application. This part of the system has the responsibilty of providing a Back Office for administrators to add, get and alter data in the backend (e.g. for reporting). 
 
